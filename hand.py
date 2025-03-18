@@ -2,6 +2,8 @@
 Class for a hand object
 """
 
+from card import Card
+
 class Hand:
     def __init__(self):
         self.hand = []
@@ -42,3 +44,15 @@ class Hand:
 
     def get_hand_value(self):
         return self.value
+
+
+# Test the hand class
+
+# Create a hand
+hand = Hand()
+print(hand)
+
+# Add a card to the hand
+hand.add_card(Card('Hearts', 'A'))
+print(hand)
+print(hand.get_value())
